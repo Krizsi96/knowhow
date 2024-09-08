@@ -11,11 +11,9 @@
             "id": "118e6e93204498cc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Embedded Rust Blinking an LED.md",
-                "mode": "source",
-                "source": false
+                "file": "gpio_port_output_data_register.png"
               }
             }
           },
@@ -97,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Embedded Rust Blinking an LED.md",
+                "file": "gpio_port_output_data_register.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Embedded Rust Blinking an LED.md",
+                "file": "gpio_port_output_data_register.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Embedded Rust Blinking an LED.md"
+                "file": "gpio_port_output_data_register.png"
               }
             }
           }
@@ -158,11 +156,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "118e6e93204498cc",
+  "active": "2357494d9fbc232d",
   "lastOpenFiles": [
-    "Embedded Rust Setup Explained.md",
+    "gpio_port_mode_register.png",
+    "description_gpioeen.png",
+    "ahb_peripheral_clock_enable_register.png",
+    "gpio_bus_architecture.png",
+    "rcc_address.png",
+    "peripheral_register_boundary_addresses.png",
     "Embedded Rust Blinking an LED.md",
-    "Pasted image 20240908163044.png",
+    "gpio_port_output_data_register.png",
+    "Embedded Rust Setup Explained.md",
     "stm32f303_memory_map.png",
     "Rust.md",
     "Entity Component System (ECS).md",
