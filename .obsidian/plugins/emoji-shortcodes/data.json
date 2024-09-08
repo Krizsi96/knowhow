@@ -1,0 +1,14 @@
+{
+  "immediateReplace": true,
+  "suggester": true,
+  "historyPriority": true,
+  "historyLimit": 100,
+  "history": [
+    ":information_source:",
+    ":exclamation:",
+    ":arrow_forward:",
+    ":warning:",
+    ":skull:",
+    ":frowning_face:"
+  ]
+}
