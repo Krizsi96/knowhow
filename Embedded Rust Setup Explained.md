@@ -197,19 +197,70 @@ With this you can confirm if the `memory.x` is set up correctly.
 
 #### Probe-rs toolchain
 
-Install `cargo-embed`
+###### Install `cargo-embed`
+
 ``` Bash
 curl --proto '=https' --tlsv1.2 -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
 ```
 
 This is going to both rebuild our code and talk with our secondary debug microcontroller to send over our binary and have it program our primary microcontroller. It's also allow us to connect a debugger so that we can set break points, modify memory and step through the code.
 
-Flashing our binary to the device
+###### Flashing 
+
 ``` Bash
 cargo embed --chip <device_chip>
 ```
 
 ❗This is failing currently, maybe it will be fixed in the future❗
+
+#### ST-Link
+
+There are other ways to program the board with the ST-Link, such as [openocd](https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Programming-an-STM32F103XXX-with-a-generic-%22ST-Link-V2%22-programmer-from-Linux), but now we will use the [open-source stlink](https://github.com/texane/stlink) tools.
+
+##### Install
+
+Unfortunately, this software is not available via the apt package manager, therefore we have to [compile it from source](https://github.com/texane/stlink/blob/master/doc/compiling.md).
+
+``` Bash
+# in a directory of your choice:
+sudo apt install libusb-1.0 libusb-1.0-0-dev
+git clone https://github.com/texane/stlink
+cd stlink
+make all
+```
+
+This creates the executables `st-flash` and `st-info`, which reside now in `build/Release/`. There are different approaches to “install” these executables. We will now copy them into a system folder.
+
+``` Bash
+sudo cp build/Release/st-{flash,info} \
+  build/Release/src/gdbserver/st-util /usr/local/bin
+```
+
+###### Flashing
+
+``` Bash
+cargo build --release
+arm-none-eabi-objcopy -O binary \
+  target/thumbv7m-none-eabi/release/<binary_name> <binary_name>.bin
+> st-flash write <binary_name>.bin <flash_memory_address>
+```
+
+###### Optional: Udev Rules
+
+To access the ST-Link without root permissions, copy the udev rules from the source code to `/etc/udev/rules.d/`
+
+``` Bash
+sudo cp etc/udev/rules.d/*.rules /etc/udev/rules.d
+sudo udevadm control --reload-rules && udevadm trigger
+```
+
+##### Optional: Erase existing software/bootloaders:
+
+This is done by executing the following command _right after pressing the reset button_ on the board:
+
+``` Bash
+st-flash erase
+```
 
 ## Debugging
 

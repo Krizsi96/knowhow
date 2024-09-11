@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Embedded Rust Setup Explained.md",
+                "file": "Embedded Rust Blinking an LED.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rust.md",
+                "file": "Embedded Rust Blinking an LED.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rust.md",
+                "file": "Embedded Rust Blinking an LED.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rust.md"
+                "file": "Embedded Rust Blinking an LED.md"
               }
             }
           }
@@ -158,8 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "118e6e93204498cc",
+  "active": "d7d174e113675264",
   "lastOpenFiles": [
+    "Embedded Rust Setup Explained.md",
+    "Embedded Rust Blinking an LED.md",
+    "Rust.md",
+    "closure.md",
+    "().md",
     "attachments/gpio_port_output_data_register.png",
     "attachments",
     "attachments/gpio_port_mode_register.png",
@@ -168,10 +174,7 @@
     "attachments/gpio_bus_architecture.png",
     "attachments/rcc_address.png",
     "attachments/peripheral_register_boundary_addresses.png",
-    "Embedded Rust Blinking an LED.md",
-    "Embedded Rust Setup Explained.md",
     "attachments/stm32f303_memory_map.png",
-    "Rust.md",
     "Entity Component System (ECS).md",
     "attachments/component_composition.png",
     "attachments/ECS_terms_relationships.png",
