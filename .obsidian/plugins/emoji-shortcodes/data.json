@@ -4,10 +4,10 @@
   "historyPriority": true,
   "historyLimit": 100,
   "history": [
+    ":warning:",
     ":information_source:",
     ":exclamation:",
     ":arrow_forward:",
-    ":warning:",
     ":skull:",
     ":frowning_face:"
   ]
