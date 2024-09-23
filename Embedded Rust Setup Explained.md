@@ -2,7 +2,7 @@
 # Introduction
 
 Working on embedded systems over 10 years ago, the developer experience was often determined by your microcontroller vendor. Which meant: writing in [[C]] using the vendor's compiler and IDE, with their in circuit debugger hardware and working in Windows. ☹
-[[Rust]], the memory safe alternative to [[C]] has started making inroads into the embedded space and technologies like [[language server protocol]] and [[LLVM]] have made it easier than ever to move away from vendor tooling for bare metal projects.
+[[Rust Lexicon]], the memory safe alternative to [[C]] has started making inroads into the embedded space and technologies like [[language server protocol]] and [[LLVM]] have made it easier than ever to move away from vendor tooling for bare metal projects.
 
 ## Tooling
 
@@ -21,7 +21,7 @@ rustup update
 
 ### IDE
 
-For IDE, you have plenty of options. A decent editor for [[Rust]], ideally with [[LSP]] support, is sufficient. For example:
+For IDE, you have plenty of options. A decent editor for [[Rust Lexicon]], ideally with [[LSP]] support, is sufficient. For example:
 
 - JetBrains Rust Rover
 - Neo Vim
@@ -29,13 +29,13 @@ For IDE, you have plenty of options. A decent editor for [[Rust]], ideally with 
 
 ## Hardware
 
-The [[Rust#rustc]] compiler is a front end for [[LLVM]] which means it's very easy to cross compile for various core architectures and environments (especially for microcontrollers that have [[arm cortex M]] or [[RISK-V]] processors).
+The [[Rust Lexicon#rustc]] compiler is a front end for [[LLVM]] which means it's very easy to cross compile for various core architectures and environments (especially for microcontrollers that have [[arm cortex M]] or [[RISK-V]] processors).
 
 It's nice to work with project or evaluation boards (like the [[STM32F3DISCOVERY]]), because they usually include a secondary microcontroller that acts as a USB debugging and programming interface to the host machine
 
 ## Cross Compiling
 
-The way to specify a different target in [[Rust#rustc]] is through a `target triple` ([[Rust#rustc/LLVM target triple]]).
+The way to specify a different target in [[Rust Lexicon#rustc]] is through a `target triple` ([[Rust Lexicon#rustc/LLVM target triple]]).
 
 1. Find out the specific microcontroller that your board has.
 2. Check the chip developer website for the architecture
@@ -74,7 +74,7 @@ fn main() {}
 
 ## Dependency Management
 
-The Rust programming language comes with its own [[Rust#dependency management]] tool.
+The Rust programming language comes with its own [[Rust Lexicon#dependency management]] tool.
 
 Let's see an example. Our code has to be properly located in our microcontroller's memory map, luckily there is a crate that addresses this issue called `cortex-m-rt`. This include a linker script that'll work with any arm cortex M based microcontroller. It will take care of the following:
 
@@ -131,7 +131,7 @@ Now every time you run `cargo build` it will automatically this target and rust 
 
 ## Don't Panic!
 
-You have to define your [[Rust#Panic]] handler. It is just another function that is marked with the panic handler attribute that has a very specific function signature. It takes a reference to a panic info argument and it never returns. It is needed to be defined even if it is not linked in.
+You have to define your [[Rust Lexicon#Panic]] handler. It is just another function that is marked with the panic handler attribute that has a very specific function signature. It takes a reference to a panic info argument and it never returns. It is needed to be defined even if it is not linked in.
 
 The easiest option is to use the `panic-halt` crate which does the absolute bare mininum.
 ⚠ Not something that you want to use in a product, but it's okay for bench debugging!

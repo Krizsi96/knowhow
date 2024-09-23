@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust.md",
+                "file": "Rust Lexicon.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "2c8b56082f3153e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Embedded Rust Zero to Async.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1730e88635feaaf1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rust Lexicon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "2ece00f671648f31",
             "type": "leaf",
             "state": {
@@ -44,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Embedded Rust Blinking an LED.md",
+                "file": "Rust Lexicon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Embedded Rust Blinking an LED.md",
+                "file": "Rust Lexicon.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Embedded Rust Blinking an LED.md"
+                "file": "Rust Lexicon.md"
               }
             }
           }
@@ -171,11 +195,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7d174e113675264",
+  "active": "1730e88635feaaf1",
   "lastOpenFiles": [
+    "Resources To Learn Rust.md",
+    "Embedded Rust Zero to Async.md",
     "Embedded Rust Setup Explained.md",
     "Embedded Rust Blinking an LED.md",
-    "Rust.md",
+    "Rust Lexicon.md",
     "closure.md",
     "().md",
     "attachments/gpio_port_output_data_register.png",

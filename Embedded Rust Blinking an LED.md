@@ -231,7 +231,7 @@ Arm developed the CMSIS System View Description ([[CMSIS-SVD]]) format, that for
 
 ### The way to use an svd2rust generated PAC
 
-The peripherals are held as register blocks inside the PAC's peripheral singleton, so our application first needs to take ownership of that instance. Then we can access the peripheral registers by name reading their bit fields directly or writing to them through a [[Rust#Closure]].
+The peripherals are held as register blocks inside the PAC's peripheral singleton, so our application first needs to take ownership of that instance. Then we can access the peripheral registers by name reading their bit fields directly or writing to them through a [[Rust Lexicon#Closure]].
 
 Example:
 ``` Rust

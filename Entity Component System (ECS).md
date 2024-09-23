@@ -1,4 +1,4 @@
-It is a popular approach to manage game data. It efficiently handles large amounts of data and is becoming the de facto standard for large engines such as [[Unity]] and [[Godot]] ([[Unreal Engine]] uses similar system with components, but without separate systems). [[Rust]] is a great fit for ECS-driven game development, and you can find several great ECS systems available in the crates system.
+It is a popular approach to manage game data. It efficiently handles large amounts of data and is becoming the de facto standard for large engines such as [[Unity]] and [[Godot]] ([[Unreal Engine]] uses similar system with components, but without separate systems). [[Rust Lexicon]] is a great fit for ECS-driven game development, and you can find several great ECS systems available in the crates system.
 
 # Terminology
 
