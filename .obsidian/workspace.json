@@ -56,6 +56,30 @@
             }
           },
           {
+            "id": "6056af3e22e31f77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Types.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "951555d4d7546929",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vectors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "2ece00f671648f31",
             "type": "leaf",
             "state": {
@@ -68,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rust Lexicon.md",
+                "file": "Vectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rust Lexicon.md",
+                "file": "Vectors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rust Lexicon.md"
+                "file": "Vectors.md"
               }
             }
           }
@@ -195,13 +219,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1730e88635feaaf1",
+  "active": "951555d4d7546929",
   "lastOpenFiles": [
+    "Data Types.md",
+    "Vectors.md",
+    "Entity Component System (ECS).md",
     "Resources To Learn Rust.md",
+    "Rust Lexicon.md",
     "Embedded Rust Zero to Async.md",
     "Embedded Rust Setup Explained.md",
     "Embedded Rust Blinking an LED.md",
-    "Rust Lexicon.md",
     "closure.md",
     "().md",
     "attachments/gpio_port_output_data_register.png",
@@ -213,7 +240,6 @@
     "attachments/rcc_address.png",
     "attachments/peripheral_register_boundary_addresses.png",
     "attachments/stm32f303_memory_map.png",
-    "Entity Component System (ECS).md",
     "attachments/component_composition.png",
     "attachments/ECS_terms_relationships.png",
     "LLVM.md",
